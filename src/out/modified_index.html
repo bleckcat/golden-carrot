@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>履歴書</title>
+</head>
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Hina+Mincho&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+    * {
+      font-family: "Hina Mincho", serif;
+      font-weight: 500;
+      font-style: normal;
+      font-size: 18px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    td,
+    tr,
+    th {
+      border: 1px solid black;
+      height: 48px;
+      padding: 0 8px;
+    }
+
+    td.no-border,
+    tr.no-border,
+    th.no-border {
+      border: none !important;
+    }
+
+    .title {
+      font-weight: bold;
+      font-size: 22px;
+    }
+
+    .center-text {
+      text-align: center;
+    }
+    h1 {
+      font-size: 48px;
+    }
+    .photo {
+      width: 90px;
+      height: 75px;
+    }
+  </style>
+<body>
+<table>
+<tr class="no-border">
+<td class="no-border title" colspan="5"><h1>履歴書</h1></td>
+</tr>
+<tr>
+<td class="title" colspan="5">カタカナ</td>
+<td class="photo" colspan="2" rowspan="4"></td>
+</tr>
+<tr>
+<td class="title" colspan="5">パスポートの順序でポルトガル語の名前</td>
+</tr>
+<tr>
+<td colspan="5" id="name-input">Juan Taques</td>
+</tr>
+<tr>
+<td class="title" colspan="5">フリガナ（読み方）</td>
+</tr>
+<tr>
+<td class="title">住所 〒</td>
+<td class="title">Eメール</td>
+<td class="title">携帯電話</td>
+<td class="title">婚姻状況</td>
+<td class="title">性別</td>
+<td class="title">英語</td>
+</tr>
+<tr>
+<td id="address-input">4615 Carambola Cir S</td>
+<td id="email-input">juanvitor16@hotmail.com</td>
+<td id="phone-input">(754) 327-5938</td>
+<td id="martial-status-input">married</td>
+<td id="sex-input">female</td>
+<td id="eng-level-input">intermediate</td>
+</tr>
+<tr>
+<td class="title">生年月日</td>
+<td class="title">身長 (cm)</td>
+<td class="title">体重(kg)</td>
+<td class="title">タトゥー</td>
+<td class="title">マネキン</td>
+<td class="title">日本語</td>
+</tr>
+<tr>
+<td id="birthdate-input">2000-04-11</td>
+<td id="height-input">175</td>
+<td id="weight-input">90</td>
+<td id="piercing-tattoo-input">X</td>
+<td id="manequim-size-input">G</td>
+<td id="jap-level-input">advanced</td>
+</tr>
+</table>
+<br/>
+<table>
+<thead>
+<td class="title center-text" colspan="1" style="width: 120px">
+          年/月
+        </td>
+<td class="title" colspan="4">職歴</td>
+</thead>
+<tbody id="work-history"><tr><td rowspan="2">2025-02-20 - 2025-02-17</td><td>company 1</td></tr><tr><td>resp1</td></tr></tbody>
+</table>
+<br/>
+<table>
+<thead>
+<td class="title center-text" colspan="1" style="width: 120px">
+          年/月
+        </td>
+<td class="title" colspan="4">学歴</td>
+</thead>
+<tbody id="study-history"><tr><td>2025-02-28 - 2025-02-28</td><td>Uni teste</td></tr><tr><td>2025-02-20 - 2025-02-25</td><td>Uni teste 2</td></tr></tbody>
+</table>
+<br/>
+<table>
+<thead>
+<td class="title center-text" colspan="1" style="width: 120px">
+          年/月
+        </td>
+<td class="title" colspan="4">資格/認定/学習</td>
+</thead>
+<tbody id="certifications"><tr><td>2025-02-12 - 2025-02-19</td><td>certification</td></tr></tbody>
+</table>
+<br/>
+<table>
+<thead>
+<td class="title center-text" colspan="1" style="width: 120px">
+          年/月
+        </td>
+<td class="title" colspan="4">プロジェクト履歴</td>
+</thead>
+<tbody id="project-history"><tr><td rowspan="2">2025-02-18 - 2025-02-23</td><td>project 1</td></tr><tr><td>responsabilidades do projeto</td></tr></tbody>
+</table>
+<br/>
+<table>
+<tr>
+<td class="title">配偶者</td>
+<td class="title">生年月日</td>
+<td class="title">扶養人数</td>
+</tr>
+<tr>
+<td id="qtde-conj">Esposa nome</td>
+<td id="spouse-birth-input">2000-11-04</td>
+<td id="qtde-deps">2</td>
+</tr>
+</table>
+<br/>
+<table>
+<tr>
+<td class="title" colspan="3">保護者（未成年の場合のみ記入）</td>
+</tr>
+<tr>
+<td class="title">電話番号</td>
+<td class="title">名前（保護者）</td>
+<td class="title">住所（保護者）</td>
+</tr>
+<tr>
+<td id="resp-phone-input"></td>
+<td id="resp-name-input"></td>
+<td id="resp-address-input"></td>
+</tr>
+</table>
+<br/>
+<table>
+<thead>
+<tr>
+<td class="title">健康問題</td>
+</tr>
+</thead>
+<tbody id="health-ploblems-table"><tr><td>teste</td></tr><tr><td>teste 1</td></tr><tr><td>tezte2</td></tr></tbody>
+</table>
+</body>
+</html>

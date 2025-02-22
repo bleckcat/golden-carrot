@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curriculo pt</title>
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Hina+Mincho&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+    * {
+      font-family: "Hina Mincho", serif;
+      font-weight: 500;
+      font-style: normal;
+      font-size: 18px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    td,
+    tr,
+    th {
+      border: 1px solid black;
+      height: 48px;
+      padding: 0 8px;
+    }
+
+    td.no-border,
+    tr.no-border,
+    th.no-border {
+      border: none !important;
+    }
+
+    .title {
+      font-weight: bold;
+      font-size: 22px;
+    }
+
+    .center-text {
+      text-align: center;
+    }
+    h1 {
+      font-size: 48px;
+    }
+    .photo {
+      width: 90px;
+      height: 75px;
+    }
+  </style>
+  <body>
+    <table>
+      <tr class="no-border">
+        <td colspan="5" class="no-border title"><h1>Currículo</h1></td>
+      </tr>
+      <tr>
+        <td colspan="5" class="title">KATAKANA</td>
+        <td colspan="2" rowspan="4" class="photo"></td>
+      </tr>
+      <tr>
+        <td colspan="5" class="title">
+          NOME EM PORTUGUÊS (ORDEM DO PASSAPORTE)
+        </td>
+      </tr>
+      <tr>
+        <td colspan="5" id="name-input"></td>
+      </tr>
+      <tr>
+        <td class="title" colspan="5">FURIGANA (LEITURA)</td>
+      </tr>
+      <tr>
+        <td class="title">ENDEREÇO 〒</td>
+        <td class="title">E-MAIL</td>
+        <td class="title">CELULAR</td>
+        <td class="title">ESTADO CIVIL</td>
+        <td class="title">SEXO</td>
+        <td class="title">INGLES</td>
+      </tr>
+      <tr>
+        <td id="address-input"></td>
+        <td id="email-input"></td>
+        <td id="phone-input"></td>
+        <td id="martial-status-input"></td>
+        <td id="sex-input"></td>
+        <td id="eng-level-input"></td>
+      </tr>
+      <tr>
+        <td class="title">DATA DE NASCIMENTO</td>
+        <td class="title">ALTURA (cm)</td>
+        <td class="title">PESO(kg)</td>
+        <td class="title">TATUAGEM</td>
+        <td class="title">MANEQUIM</td>
+        <td class="title">JAPONES</td>
+      </tr>
+      <tr>
+        <td id="birthdate-input"></td>
+        <td id="height-input"></td>
+        <td id="weight-input"></td>
+        <td id="piercing-tattoo-input"></td>
+        <td id="manequim-size-input"></td>
+        <td id="jap-level-input"></td>
+      </tr>
+    </table>
+    <br />
+    <table>
+      <thead>
+        <td colspan="1" style="width: 120px" class="title center-text">
+          ANO/MÊS
+        </td>
+        <td colspan="4" class="title">HISTÓRICO DE TRABALHO</td>
+      </thead>
+      <tbody id="work-history"></tbody>
+    </table>
+    <br />
+    <table>
+      <thead>
+        <td colspan="1" style="width: 120px" class="title center-text">
+          ANO/MÊS
+        </td>
+        <td colspan="4" class="title">HISTÓRICO ESCOLAR</td>
+      </thead>
+      <tbody id="study-history"></tbody>
+    </table>
+    <br />
+    <table>
+      <thead>
+        <td colspan="1" style="width: 120px" class="title center-text">
+          ANO/MÊS
+        </td>
+        <td colspan="4" class="title">LICENSAS/QUALIFICAÇÕES/ESTUDOS</td>
+      </thead>
+      <tbody id="certifications"></tbody>
+    </table>
+    <br />
+    <table>
+      <thead>
+        <td colspan="1" style="width: 120px" class="title center-text">
+          ANO/MÊS
+        </td>
+        <td colspan="4" class="title">HISTÓRICO ESCOLAR</td>
+      </thead>
+      <tbody id="project-history"></tbody>
+    </table>
+    <br />
+    <table>
+      <tr>
+        <td class="title">CÔNJUGE</td>
+        <td class="title">DATA DE NASCIMENTO</td>
+        <td class="title">NUMERO DEPENDENTE(S)</td>
+      </tr>
+      <tr>
+        <td id="qtde-conj"></td>
+        <td id="spouse-birth-input"></td>
+        <td id="qtde-deps"></td>
+      </tr>
+    </table>
+    <br />
+    <table>
+      <tr>
+        <td colspan="3" class="title">
+          RESPONSÁVEL（SOMENTE PREENCHER CASO SEJA MENOR DE IDADE）
+        </td>
+      </tr>
+      <tr>
+        <td class="title">TELEFONE</td>
+        <td class="title">NOME (RESPONS.)</td>
+        <td class="title">ENDEREÇO (RESPONS.)</td>
+      </tr>
+      <tr>
+        <td id="resp-phone-input"></td>
+        <td id="resp-name-input"></td>
+        <td id="resp-address-input"></td>
+      </tr>
+    </table>
+    <br />
+    <table>
+      <thead>
+        <tr>
+          <td class="title">PROBLEMAS DE SAUDE</td>
+        </tr>
+      </thead>
+      <tbody id="health-ploblems-table"></tbody>
+    </table>
+  </body>
+</html>
